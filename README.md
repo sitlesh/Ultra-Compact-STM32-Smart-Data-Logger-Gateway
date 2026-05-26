@@ -1,3 +1,4 @@
+
 # Custom Embedded Controller Board with Micro SD Storage
 
 A professionally designed, compact **2-layer printed circuit board (PCB)** developed using **KiCad 8.0**. This hardware platform is engineered for standalone embedded applications requiring localized data logging, high-precision timing, and robust power delivery.
@@ -31,16 +32,13 @@ A professionally designed, compact **2-layer printed circuit board (PCB)** devel
 This repository contains all the native design assets and manufacturing files required to replicate or modify this project.
 
 ### 🛠️ Source Design Files (KiCad 8.0)
-* **`*.kicad_pro`** : The master KiCad project file that links the schematic and PCB layout configurations together.
-* **`*.kicad_sch`** : The complete schematic capture. Contains the logical circuit connections, component symbols, and electrical nets.
-* **`*.kicad_pcb`** : The physical 2-layer board layout, trace routing, component footprints, and copper ground planes.
-* **`.gitignore`** : Configured to exclude local KiCad auto-saves and temporary backup files (`*.bak`, `*-bak`) to keep the repository clean.
+* **[`Ultra-Compact STM32 Smart Data Logger & Gateway.kicad_pro`](./Ultra-Compact%20STM32%20Smart%20Data%20Logger%20%26%20Gateway.kicad_pro)** : The master KiCad project file that links the schematic and PCB layout configurations together.
+* **[`Ultra-Compact STM32 Smart Data Logger & Gateway.kicad_sch`](./Ultra-Compact%20STM32%20Smart%20Data%20Logger%20%26%20Gateway.kicad_sch)** : The complete schematic capture. Contains the logical circuit connections, component symbols, and electrical nets.
+* **[`Ultra-Compact STM32 Smart Data Logger & Gateway.kicad_pcb`](./Ultra-Compact%20STM32%20Smart%20Data%20Logger%20%26%20Gateway.kicad_pcb)** : The physical 2-layer board layout, trace routing, component footprints, and copper ground planes.
+* **[`gitignore.txt`](./gitignore.txt)** : Configured to exclude local KiCad auto-saves and temporary backup files to keep the repository clean.
 
-### 📦 Manufacturing Files (`/Gerber_Output/`)
-The files in this folder are exported in standard RS-274X format and are ready to send to any PCB fab house (e.g., JLCPCB, PCBWay):
-* **`*.gbr` (Gerber Files):** Separate layers containing data for Top/Bottom Copper (`F.Cu`/`B.Cu`), Solder Mask (`F.Mask`/`B.Mask`), Silkscreen Text (`F.SilkS`/`B.SilkS`), and the physical board boundary (`Edge.Cuts`).
-* **`*.drl` (NC Drill Files):** Contains the exact coordinates and hole-size mapping for CNC drilling machines to create component holes and vias.
-* **`*_Gerbers.zip`** : A pre-packaged, compressed archive containing all individual Gerber and Drill files.
+### 📦 Manufacturing Files
+* **[`Download Pre-packaged Gerbers ZIP (Gerbers.zip)`](./Gerbers.zip)** : Contains the combined ZIP archive. Click this link and hit the **Download** button on the next page to get all production-ready Gerber and Drill files for direct manufacturing.
 
 ---
 
